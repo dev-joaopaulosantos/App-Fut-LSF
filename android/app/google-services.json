@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "734850287102",
+    "project_id": "fut-lsf",
+    "storage_bucket": "fut-lsf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734850287102:android:0f4ca63da27a84bf912caf",
+        "android_client_info": {
+          "package_name": "com.mobilelsf.futlsf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734850287102-r42r0u1sp1gmporijif47gejirhhcj6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9-H9ysDiS008VbHMOAeArDTRz2QH9MME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734850287102-r42r0u1sp1gmporijif47gejirhhcj6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
