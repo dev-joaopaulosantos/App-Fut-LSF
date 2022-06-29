@@ -1,33 +1,18 @@
-import 'dart:convert';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import "package:http/http.dart" as http;
 import 'package:teste04_completo/pages/pages_jogadores_equipes.dart';
+import 'package:teste04_completo/conexao.dart';
 
 class HomePageEquipes extends StatefulWidget {
   const HomePageEquipes({Key? key}) : super(key: key);
-
   @override
   _HomePageEquipesState createState() => _HomePageEquipesState();
 }
 
 class _HomePageEquipesState extends State<HomePageEquipes> {
-  get backgroundColor => null;
-
-  get backgroundImage => null;
-
-  Future<List> pegarDados() async {
-    var url = Uri.parse('https://teste00-futlsf.herokuapp.com/api-equipes.php');
-    var response = await http.get(url);
-    if (response.statusCode == 200) {
-      return jsonDecode(response.body);
-    } else {
-      throw Exception('Erro ao carregar dados do servidor');
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
+    var link = Uri.parse('https://teste00-futlsf.herokuapp.com/api-equipes.php');
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 100, //Altura da AppBar
@@ -40,7 +25,7 @@ class _HomePageEquipesState extends State<HomePageEquipes> {
         ),
       ),
       body: FutureBuilder<List>(
-        future: pegarDados(),
+        future: pegarDados(link),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             return Center(
