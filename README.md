@@ -1,4 +1,4 @@
-# teste06_completo
+# Fut-LSF (Copão Urbano Rural)
 
 A new Flutter project.
 
