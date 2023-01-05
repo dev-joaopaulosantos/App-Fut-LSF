@@ -11,7 +11,7 @@ class TabelaA extends StatefulWidget {
 class _TabelaAState extends State<TabelaA> {
   @override
   Widget build(BuildContext context) {
-    titulo = "GRUPO 01";
+    titulo = "GRUPO 1";
     link = Uri.parse(
           'https://teste00-futlsf.herokuapp.com/api-tabela-grupo-a.php');
     return cardTabelas();
@@ -28,7 +28,7 @@ class TabelaB extends StatefulWidget {
 class _TabelaBState extends State<TabelaB> {
   @override
   Widget build(BuildContext context) {
-    titulo = "GRUPO 02";
+    titulo = "GRUPO 2";
     link = Uri.parse(
           'https://teste00-futlsf.herokuapp.com/api-tabela-grupo-b.php');
     return cardTabelas();
@@ -45,7 +45,7 @@ class TabelaC extends StatefulWidget {
 class _TabelaCState extends State<TabelaC> {
   @override
   Widget build(BuildContext context) {
-    titulo = "GRUPO 03";
+    titulo = "GRUPO 3";
     link = Uri.parse(
           'https://teste00-futlsf.herokuapp.com/api-tabela-grupo-c.php');
     return cardTabelas();
@@ -62,7 +62,7 @@ class TabelaD extends StatefulWidget {
 class _TabelaDState extends State<TabelaD> {
   @override
   Widget build(BuildContext context) {
-    titulo = "GRUPO 04";
+    titulo = "GRUPO 4";
     link = Uri.parse(
           'https://teste00-futlsf.herokuapp.com/api-tabela-grupo-d.php');
     return cardTabelas();
